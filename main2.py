@@ -1,5 +1,6 @@
-palavra=input('Digite uma palavra : ')
+frase=input('Escreva um frase ou uma palavra : ')
+vogais=('ÁAÀÂÃÄaáàâãäÉEÈÊËéèeêëÍÌIÎÏíìiîïÓÒÔÕOÖóòoôõöÚÙUÛÜúùûuü')
 
-quantidade=len(palavra)
+quan=len([letra for letra in frase if letra in vogais])
 
-print('sua palavra é',palavra,'e ela contem',quantidade,'caracteries')
+print(frase,'contem',quan,'de vogais')
